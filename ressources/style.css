@@ -1,0 +1,48 @@
+/* DOCUMENT INFORMATION 
+
+    - Document: Projet B 
+    - Version: 0.5
+    - Author: DuTss
+*/
+
+/*  COLORS 
+
+    - h1
+    - h2 
+    - button
+    - border
+
+*/
+
+/* FONTS
+
+    - 
+    - 
+
+*/ 
+
+/* CSS DIRECTORY 
+
+    - GLOBAL
+    - HEADER
+
+*/
+
+
+/* GLOBAL
+=============================================================*/
+
+html {
+    background-color: #fff;
+}
+
+
+
+/* HEADER
+=============================================================*/
+
+.logo {
+    width: 132px;
+    height: 100px;
+    vertical-align: middle;
+}
