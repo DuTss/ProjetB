@@ -33,9 +33,9 @@
                         </div>
                         <div class="col-md-6 menu">
                             <div class="row">
-                                <div class="col-md-3">
+                                <div class="col-md-4">
                                     <div class="btn-group" role="group">
-                                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle introduction" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Introduction
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
@@ -53,7 +53,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <div class="btn-group" role="group">
-                                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle participer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                         Participer
                                         </button>
                                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
@@ -62,9 +62,9 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-md-2">
                                     <div class="btn-group" role="group">
-                                        <button type="button" class="btn btn-secondary">FAQ</button>
+                                        <button type="button" class="btn btn-secondary faq">FAQ</button>
                                     </div>
                                 </div>
                             </div>
@@ -77,22 +77,39 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 home-title2">
-                    <h2>Bitcoin est un tour de force de technologie.</h2>
+                    <h2>Bitcoin marque le début de quelque chose d’important: une monnaie sans gouvernement, ce qui est nécessaire et impératif.</h2>
                 </div>
             </div>
-            <div class="row btn-csd">
-                <div class="col-md-4">
-                    <h3>Comprendre</h3>
+            <div class="row">
+                <div class="col-md-12 btn-csd">
+                    <button class="big-button button" style="width: 200px;">Comprendre</button>
+                    <button class="big-button button" style="width: 200px;">Sécuriser</button>
+                    <button class="big-button button" style="width: 200px;">Détenir</button>
                 </div>
-                <div class="col-md-4">
-                    <h3>Sécuriser</h3>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 what">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bBC-nXj3Ng4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
-                <div class="col-md-4">
-                    <h3>Détenir</h3>
+            </div>
+            <div class="row">
+                <div class="col-md-12 btn-youtube">
+                    <button class="mainvideo-btn-open" onclick="loadYoutubeVideo(event);" ontouchstart="loadYoutubeVideo(event);" data-youtubeurl="//www.youtube.com/embed/Gc2en3nHxA4?rel=0&amp;showinfo=0&amp;wmode=opaque&amp;autoplay=1&amp;cc_load_policy=1&amp;hl=fr&amp;cc_lang_pref=fr">Qu'est ce que Bitcoin&nbsp;?</button>
                 </div>
             </div>
         </div>
     </header>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"></div>
+            </div>
+        </div>
+    </section>
+
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
