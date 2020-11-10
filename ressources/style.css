@@ -41,8 +41,16 @@ html {
 /* HEADER
 =============================================================*/
 
-.logo {
-    width: 132px;
-    height: 100px;
-    vertical-align: middle;
+.navbar button {
+    background-color: rgb(230, 154, 55);
+    border: black solid 2px;
+    border-radius: 10px;
+}
+
+.home-title2 {
+    text-align: center;
+}
+
+.menu {
+    text-align: center;
 }
