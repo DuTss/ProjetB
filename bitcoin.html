@@ -28,49 +28,30 @@
         <div class="container navbar">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="row big-title">
-                        <div class="col-md-6 home-title">
-                            <h1>Bitcoin - The Alternative</h1>
-                        </div>
-                        <div class="col-md-6 menu">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <div class="btn-group" role="group">
-                                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle introduction" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Introduction
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                          <a class="dropdown-item" href="#">Particuliers</a>
-                                          <a class="dropdown-item" href="#">Entreprises</a>
-                                          <a class="dropdown-item" href="#">Développeurs</a>
-                                          <a class="dropdown-item" href="#">Comment ça marche ?</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="btn-group" role="group">
-                                        <button type="button" class="btn btn-secondary innovation">Innovation</button>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="btn-group" role="group">
-                                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle participer" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Participer
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                                          <a class="dropdown-item" href="#">Soutenir Bictoin</a>
-                                          <a class="dropdown-item" href="#">Développement</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2">
-                                    <div class="btn-group" role="group">
-                                        <button type="button" class="btn btn-secondary faq">FAQ</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <nav>
+                        <a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i> Menu</a>    
+                            <ul class="menu">
+                                <li><a class="homer" href="#"><i class="fab fa-bitcoin"></i></i> BITCOIN</a></li>
+                                <li><a  href="#"><i class="fa fa-user"></i> INTRODUCTION</a></li>
+                                <li><a  href="#"><i class="fa fa-camera"></i> RESSOURCES</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Particuliers</a></li>
+                                <li><a href="#">Entreprises</a></li>
+                                <li><a href="#">Développeurs</a></li>
+                                <li><a href="#">Comment ça marche ?</a></li>
+                           </ul>
+                                </li>
+                                <li><a  href="#"><i class="fa fa-bullhorn"></i> INNOVATION</a></li>
+                                <li><a  href="#"><i class="fa fa-tags"></i> PARTICIPER</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">Soutenir Bictoin</a></li>
+                                <li><a href="#">Développement</a></li>
+                            </ul>
+                                </li>
+                                <li><a  href="#"><i class="fa fa-envelope"></i> CONTACT</a></li>
+                                <li><a  href="#"><i class="fa fa-sitemap"></i> FAQ</a></li>
+                            </ul>
+                    </nav>
                 </div>                
             </div>
         </div>
@@ -80,44 +61,77 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="main-timeline">
-                        <div class="timeline">
-                            <div class="timeline-icon"><span class="year">2018</span></div>
-                            <div class="timeline-content">
-                                <h3 class="title">Web Desginer</h3>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-icon"><span class="year">2017</span></div>
-                            <div class="timeline-content">
-                                <h3 class="title">Web Developer</h3>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-icon"><span class="year">2017</span></div>
-                            <div class="timeline-content">
-                                <h3 class="title">Web Developer</h3>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="timeline">
-                            <div class="timeline-icon"><span class="year">2017</span></div>
-                            <div class="timeline-content">
-                                <h3 class="title">Web Developer</h3>
-                                <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec lacinia mi ultrices, luctus nunc ut, commodo enim. Vivamus sem erat.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="history-tl-container">
+                        <ul class="tl">
+                            <li class="tl-item" ng-repeat="item in retailer_history">
+                                <div class="timestamp">2008</div>
+                                <div class="item-title">Lancement par Satoshi Nakamoto</div>
+                                <div class="item-detail">   – Août : Le nom de domaine bitcoin.org est réservé sous le nom de Satoshi Nakamoto.<br>
+                                                            – Septembre : Satoshi Nakamoto envoie le brouillon de son livre blanc à Wei Dai sous le titre « Electronic Cash Without a Trusted Third Party ».<br>
+                                                            – Octobre : Annonce de la naissance de Bitcoin. La première spécification et preuve de concept de Bitcoin est publiée sur la Cryptography Mailing List par Satoshi Nakamoto.</p></div>
+                            </li>
+                            <li class="tl-item" ng-repeat="item in retailer_history">
+                                <div class="timestamp">2009</div>
+                                <div class="item-title">Première version du logiciel</div>
+                                <div class="item-detail">   – Janvier : Annonce de la publication de la première version du logiciel Bitcoin (bitcoin-0.1.0),création du premier bloc.<br>
+                                                            – Février : Première transaction en bitcoins entre Satoshi Nakamoto et Hal Finney. Bloc 170, montant = 10BTC<br>
+                                                            – Mars : Annonce de la création de Bitcoin sur le site P2Pfoundation et publication d’une première version du logiciel.<br>
+                                                            – Octobre : Première estimation de la valeur du bitcoin à partir de son « coût de production ». Un bitcoin vaut environ 0,001 USD.<br>
+                                                            – Novembre : Ouverture du forum Bitcointalk créé par Satoshi Nakamoto.</div>
+                            </li>
+                            <li class="tl-item" ng-repeat="item in retailer_history">
+                                <div class="timestamp">2010</div>
+                                <div class="item-title">Bye Satoshi...</div>
+                                <div class="item-detail">   – Mars : Ouverture de Bitcoinmarket.com, premier exchange bitcoin/fiat.<br>
+                                                            – Mai : Hanyecz achète deux pizzas pour 10 000 bitcoins.<br>
+                                                            – Août : Le bitcoin vaut 0,06 €.<br>
+                                                            – Novembre : Dernier message public de Satoshi Nakamoto. Il quitte le projet, annonçant simplement être passé à autre chose.<br>
+                                                            – Décembre : Création de bitcoin.fr.</div>
+                            </li>
+                            <li class="tl-item" ng-repeat="item in retailer_history">
+                                <div class="timestamp">2011</div>
+                                <div class="item-title">Parité total</div>
+                                <div class="item-detail">   – Février : Bitcoin atteint la parité avec le dollar puis, quelques jours plus tard, avec l’euro.<br>
+                                                            – Avril : Dernier échange privé connu de Satoshi Nakamoto (correspondance avec Mike Hearn).<br>
+                                                            – Juin : Pour contourner les sanctions américaines, Wikileaks décide d’accepter les dons en bitcoins.<br>
+                                                            – Août : Lancement de Paymium, sous le nom de Bitcoin-Central, première plateforme française d’échange de bitcoins.<br></div>
+                            </li>
+                            <li class="tl-item" ng-repeat="item in retailer_history">
+                                <div class="timestamp">2012</div>
+                                <div class="item-title">1ère Réduction de moitié</div>
+                                <div class="item-detail">   – Février : adoption du BIP 16, « hard fork » qui résout certains problèmes, après un vote de 55% du réseau (550 blocs sur 1000).<br>
+                                                            – Septembre : La Fondation Bitcoin est créée afin de standardiser, protéger et promouvoir le Bitcoin.<br>
+                                                            – Novembre : La plateforme d’hébergement de blogs WordPress accepte les bitcoins pour ses services additionnels payants.<br>
+                                                            – Décembre : Division de la récompense de minage, de 50 à 25 BTC.</div>
+                            </li>
+                            <li class="tl-item" ng-repeat="item in retailer_history">
+                                <div class="timestamp">2013</div>
+                                <div class="item-title">Décollage et panique !</div>
+                                <div class="item-detail">   – Avril :  Le cours atteint les 287 euros, nouveau record historique.<br>
+                                                            – Avril : Mike Hearn publie une explication détaillée du fonctionnement des canaux de paiements suggérés par Satoshi Nakamoto.<br>
+                                                            – Novembre : Surprises par la montée de Bitcoin, les banques centrales de Chine, de France, d’Europe, de l’Ile Maurice et d’Inde s’affolent.<br>
+                                                            – Décembre : L’Autorité Bancaire Européenne (EBA) met en garde à son tour les utilisateurs de Bitcoin.</div>
+                            </li>
+                            <li class="tl-item" ng-repeat="item in retailer_history">
+                                <div class="timestamp">2017</div>
+                                <div class="item-title">Sa Médiatisation - Son Sommet</div>
+                                <div class="item-detail">   – Avril : Le Japon reconnait le bitcoin et les monnaies dites « virtuelles » comme des moyens de paiement légaux.<br>
+                                                            – Octobre : Le bitcoin bat un nouveau record historique avec un pic à  16 323 € et 19 891 $.<br>
+                                                            – Novembre : Le ministère des Finances du Portugal exonère les particuliers des taxes sur les plus-values issues de la vente de bitcoins.<br>
+                                                            – Décembre : Premier paiement réalisé sur le Lightning Network.</div>
+                            </li>
+                            <li class="tl-item" ng-repeat="item in retailer_history">
+                                <div class="timestamp">2020</div>
+                                <div class="item-title">3ème Réduction de moitié</div>
+                                <div class="item-detail">   – Février : Ajout d’un hashtag personnalisé pour Bitcoin sur Twitter.<br>
+                                                            – Mars : Krach financier lié à la crise du covid-19. Le bitcoin chute de plus de 45% pour atteindre un plus bas à 3790€.<br>
+                                                            – Avril : La Réserve fédérale des États-Unis puis la Banque Centrale Européenne annoncent des mesures massives de soutien à l’économie.<br>
+                                                            – Mai : Troisième halving de Bitcoin.</div>
+                            </li>
+                      
+                        </ul>
+                      
+                      </div>
                 </div>
             </div>
         </div>
@@ -132,11 +146,11 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="f_widget company_widget wow fadeInLeft" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInLeft;">
-                        <h3 class="f-title f_600 t_color f_size_18">Get in Touch</h3>
-                        <p>Don’t miss any updates of our new templates and extensions.!</p>
+                        <h3 class="f-title f_600 t_color f_size_18">Restez avec Nous!</h3>
+                        <p>Ne ratez aucune mise à jour !</p>
                         <form action="#" class="f_subscribe_two mailchimp" method="post" novalidate="true" _lpchecked="1">
                             <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
-                            <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+                            <button class="btn btn_get btn_get_two" type="submit">S'inscrire</button>
                             <p class="mchimp-errmessage" style="display: none;"></p>
                             <p class="mchimp-sucmessage" style="display: none;"></p>
                         </form>
@@ -144,33 +158,30 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInLeft;">
-                        <h3 class="f-title f_600 t_color f_size_18">Download</h3>
+                        <h3 class="f-title f_600 t_color f_size_18">Introduction</h3>
                         <ul class="list-unstyled f_list">
-                            <li><a href="#">Company</a></li>
-                            <li><a href="#">Android App</a></li>
-                            <li><a href="#">ios App</a></li>
-                            <li><a href="#">Desktop</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">My tasks</a></li>
+                            <li><a href="#">Particuliers</a></li>
+                            <li><a href="#">Entreprises</a></li>
+                            <li><a href="#">Développeur</a></li>
+                            <li><a href="#">Bitcoin Core</a></li>
+                            <li><a href="#">Comment ça marche?</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="f_widget about-widget pl_70 wow fadeInLeft" data-wow-delay="0.6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInLeft;">
-                        <h3 class="f-title f_600 t_color f_size_18">Help</h3>
+                        <h3 class="f-title f_600 t_color f_size_18">Besoin d'aide ?</h3>
                         <ul class="list-unstyled f_list">
                             <li><a href="#">FAQ</a></li>
                             <li><a href="#">Term &amp; conditions</a></li>
-                            <li><a href="#">Reporting</a></li>
-                            <li><a href="#">Documentation</a></li>
                             <li><a href="#">Support Policy</a></li>
-                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Participer</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="f_widget social-widget pl_70 wow fadeInLeft" data-wow-delay="0.8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInLeft;">
-                        <h3 class="f-title f_600 t_color f_size_18">Team Solutions</h3>
+                        <h3 class="f-title f_600 t_color f_size_18">Retrouvez-nous ici !</h3>
                         <div class="f_social_icon">
                             <a href="#" class="fab fa-facebook"></a>
                             <a href="#" class="fab fa-twitter"></a>
@@ -190,7 +201,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 col-sm-7">
-                    <p class="mb-0 f_400">© Bitcoin. 2020 All rights reserved.</p>
+                    <p class="mb-0 f_400">© Bitcoin Project 2009-2020. All rights reserved.</p>
                 </div>
                 <div class="col-lg-6 col-sm-5 text-right">
                     <p>Made by <i class="icon_heart"></i><a href="#">DuTss</a></p>
