@@ -39,24 +39,23 @@ html {
 }
 
 body {
-    background-image: url(./Images/fond.png);
+    background: linear-gradient(0.25turn, #345e81, #ebf8e1, #f69d3c);
     background-position: center;
     background-attachment: fixed;
     background-size: 2000px 970px;
     background-repeat: no-repeat;
 }
 
-/* HEADER
+/* HEADER linear-gradient(0.25turn, #f69d3c, #ebf8e1a6, #e3e65a)
 =============================================================*/
 
 nav {
     justify-content: center;
     display: block;
-    background: rgb(255, 169, 57);
-    border-radius: 15px;
+    background: linear-gradient(0.25turn, #345e81, #ebf8e1, #f69d3c);
+    border-radius: 10px;
     margin-left: 40px;
     margin-top: 20px;
-    margin-bottom: 20px;
 }
 
 .menu {
@@ -78,7 +77,7 @@ nav {
     text-decoration: none;
     padding: 20px 15px;
     display: block;
-    color: #fff;
+    color: black;
     transition: all 0.2s ease-in-out 0s;
 }
 
@@ -188,9 +187,12 @@ nav {
     color: #fff;
     text-decoration: none;
 }
-
 a.homer {
-    background: gray;
+    background: #f69d3c;
+}
+
+.homer {
+    font-size: 1rem;
 }
 
 @media (min-width: 768px) and (max-width: 979px) {
@@ -384,6 +386,7 @@ button.big-button:active::before {
 
 .btn-histoire a {
     text-decoration: none;
+    color: #fff;
 }
 
 .btn-histoire2 {
@@ -395,6 +398,11 @@ button.big-button:active::before {
     box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
     -webkit-transform: translate(0px, -10px) scale(1.2);
     transform: translate(0px, -10px) scale(1.2);
+}
+
+.btn-histoire a:hover {
+    text-decoration: none;
+    color: #fff;
 }
 
 
@@ -409,7 +417,7 @@ button.big-button:active::before {
     height: 600px;
     padding: 30px;
     background: #FFF;
-    border-left: 30px solid #ffa216;
+    border-left: 30px solid #f69d3c;
     transform: rotate(-45deg) skewX(10deg) scale(.8);
     box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5)
 }
@@ -419,7 +427,8 @@ button.big-button:active::before {
     padding: 0;
     text-align: center;
     font-size: 25px;
-    color: #ffbc3e
+    color: #f69d3c;
+    font-weight: bold;
 }
 
 .page p {
@@ -449,6 +458,77 @@ button.big-button:active::before {
     bottom: 0;
     left: 0;
     transform: skewX(-45deg) translate(-11px, 30px)
+}
+
+
+  /* TIMELINE
+=============================================================*/
+
+
+.history-tl-container{
+    font-family: 'Titillium Web', sans-serif;
+    width:75%;
+    margin:auto;
+    display:block;
+    position:relative;
+}
+
+.history-tl-container ul.tl{
+    margin:20px 0;
+    padding:0;
+    display:inline-block; 
+}
+
+.history-tl-container ul.tl li{
+    list-style: none;
+    margin:auto;
+    margin-left:200px;
+    min-height:50px;
+    /*background: rgba(255,255,0,0.1);*/
+    border-left:3px dashed #79440079;
+    padding:0 0 50px 30px;
+    position:relative;
+}
+
+  .history-tl-container ul.tl li:last-child{ border-left:0;}
+  .history-tl-container ul.tl li::before{
+    position: absolute;
+    left: -60px;
+    top: 12px;
+    content: " ";
+    border: 8px solid rgb(255, 204, 162);
+    border-radius: 500%;
+    background: #ff8800;
+    height: 50px;
+    width: 50px;
+    transition: all 500ms ease-in-out;
+}
+
+.history-tl-container ul.tl li:hover::before{
+    border-color:  #ff7402;
+    transition: all 1000ms ease-in-out;
+}
+
+  ul.tl li .item-detail{
+    color:rgba(0, 0, 0, 0.9);
+    font-size: 17px;
+}
+
+  ul.tl li .timestamp{
+    color: #ff8800;
+    position: absolute;
+    width:100px;
+    left: -30%;
+    top: 2px;
+    text-align: right;
+    font-size: 44px;
+    font-weight: bolder;
+}
+
+.item-title {
+    font-size: 21px;
+    font-weight: bolder;
+    color: rgb(77, 46, 0);
 }
 
 
@@ -510,7 +590,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 
 
 .new_footer_top .f_widget.about-widget .f_list li a:hover {
-    color: #ffa620;
+    color: #000000;
 }
 .new_footer_top .f_widget.about-widget .f_list li {
     margin-bottom: 11px;
@@ -562,19 +642,19 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 .btn_get_two {
     -webkit-box-shadow: none;
     box-shadow: none;
-    background: #ffb120;
-    border-color: #ffb120;
+    background: #f69d3c;
+    border-color: #f69d3c;
     color: #fff;
 }
 
 .btn_get_two:hover {
     background: transparent;
-    color: #ffb120;
+    color: #f69d3c;
 }
 
 .new_footer_top .f_social_icon a:hover {
-    background: #ffb120;
-    border-color: #ffb120;
+    background: #f69d3c;
+    border-color: #f69d3c;
     color:white;
 }
 .new_footer_top .f_social_icon a + a {
@@ -582,7 +662,7 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 .new_footer_top .f-title {
     margin-bottom: 30px;
-    color: #263b5e;
+    color: #1d2e4b;
 }
 .f_600 {
     font-weight: 600;
@@ -657,72 +737,3 @@ a:hover, a:focus, .btn:hover, .btn:focus, button:hover, button:focus {
 }
 
 /*************footer End*****************/
-
-/** TIMELINE **/
-
-
-.history-tl-container{
-    font-family: 'Titillium Web', sans-serif;
-    width:75%;
-    margin:auto;
-    display:block;
-    position:relative;
-}
-
-.history-tl-container ul.tl{
-    margin:20px 0;
-    padding:0;
-    display:inline-block; 
-}
-
-.history-tl-container ul.tl li{
-    list-style: none;
-    margin:auto;
-    margin-left:200px;
-    min-height:50px;
-    /*background: rgba(255,255,0,0.1);*/
-    border-left:3px dashed #79440079;
-    padding:0 0 50px 30px;
-    position:relative;
-}
-
-  .history-tl-container ul.tl li:last-child{ border-left:0;}
-  .history-tl-container ul.tl li::before{
-    position: absolute;
-    left: -60px;
-    top: 12px;
-    content: " ";
-    border: 8px solid rgb(255, 204, 162);
-    border-radius: 500%;
-    background: #ff8800;
-    height: 50px;
-    width: 50px;
-    transition: all 500ms ease-in-out;
-}
-
-.history-tl-container ul.tl li:hover::before{
-    border-color:  #ff7402;
-    transition: all 1000ms ease-in-out;
-}
-
-  ul.tl li .item-detail{
-    color:rgba(0, 0, 0, 0.9);
-    font-size: 17px;
-}
-
-  ul.tl li .timestamp{
-    color: #ff8800;
-    position: absolute;
-    width:100px;
-    left: -30%;
-    top: 2px;
-    text-align: right;
-    font-size: 44px;
-    font-weight: bolder;
-}
-
-.item-title {
-    font-size: 21px;
-    font-weight: bolder;
-    color: rgb(77, 46, 0);
-}
