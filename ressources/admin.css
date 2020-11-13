@@ -429,3 +429,33 @@ tbody tr:nth-child(even) {
         padding-right: 1rem;
     }
 }
+
+.number {
+    font-size: 2rem;
+    color: #f69d3c;
+    font-weight: bolder;
+}
+
+.number-name {
+    font-size: 1.4rem;
+}
+
+
+.number, .number-name {
+    display: block;
+    text-align: center;
+}
+
+.number-content {
+    border: 1px grey solid;
+    box-shadow: 5px rgba(0, 0, 0, 0.6);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 260px;
+    background-color: rgb(216, 216, 216);
+}
+
+.first-number {
+    margin-bottom: 20px;
+}
+
